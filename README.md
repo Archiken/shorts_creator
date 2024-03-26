@@ -5,3 +5,6 @@
 6. Clip.py將把指示的時間段剪下(並將多段合併成)一部影片；同時用這部影片再利用whisper生成.srt檔案的逐字稿。
 7. 點進Clip生成的.srt檔，確認每一行不超過13個中文字(以免短影片字幕超出橫幅)，並將想要紅字強調的部分使用小括號()框起來。
 8. 完成.srt檔的編輯後，使用MakingShorts.py，將短影片生成。
+
+安裝包注意:
+運行MakingShorts.py時可能碰到: AttributeError: 'ImageDraw' object has no attribute 'textsize'；可以嘗試確認Pillow的安裝版本，若是10.0請嘗試重新安裝Pillow=9.5.0
